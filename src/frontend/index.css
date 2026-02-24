@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0rem;
+    /* Pure white background */
+    --background: 1 0 0;
+    /* Pure black text */
+    --foreground: 0 0 0;
+    /* Card: slightly off-white for subtle depth */
+    --card: 0.98 0 0;
+    --card-foreground: 0 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0 0 0;
+    /* Primary: vivid lime green accent */
+    --primary: 0.88 0.295 142;
+    --primary-foreground: 0 0 0;
+    /* Secondary: pure black for headers */
+    --secondary: 0 0 0;
+    --secondary-foreground: 1 0 0;
+    /* Muted: light gray for subtle elements */
+    --muted: 0.95 0 0;
+    --muted-foreground: 0.45 0 0;
+    /* Accent: same vivid green */
+    --accent: 0.88 0.295 142;
+    --accent-foreground: 0 0 0;
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 1 0 0;
+    /* Borders: medium gray */
+    --border: 0.85 0 0;
+    --input: 0.85 0 0;
+    --ring: 0.88 0.295 142;
+    --chart-1: 0.88 0.295 142;
+    --chart-2: 0 0 0;
+    --chart-3: 0.45 0 0;
+    --chart-4: 0.98 0 0;
+    --chart-5: 0.7 0 0;
+  }
+
+  .dark {
+    /* Pure black background */
+    --background: 0 0 0;
+    /* Pure white text */
+    --foreground: 1 0 0;
+    /* Card: very dark gray */
+    --card: 0.12 0 0;
+    --card-foreground: 1 0 0;
+    --popover: 0.12 0 0;
+    --popover-foreground: 1 0 0;
+    /* Primary: same vivid green */
+    --primary: 0.88 0.295 142;
+    --primary-foreground: 0 0 0;
+    /* Secondary: pure white for headers */
+    --secondary: 1 0 0;
+    --secondary-foreground: 0 0 0;
+    /* Muted: dark gray */
+    --muted: 0.2 0 0;
+    --muted-foreground: 0.6 0 0;
+    /* Accent: same vivid green */
+    --accent: 0.88 0.295 142;
+    --accent-foreground: 0 0 0;
+    --destructive: 0.62 0.24 25;
+    --destructive-foreground: 0 0 0;
+    /* Borders: dark gray */
+    --border: 0.25 0 0;
+    --input: 0.25 0 0;
+    --ring: 0.88 0.295 142;
+    --chart-1: 0.88 0.295 142;
+    --chart-2: 1 0 0;
+    --chart-3: 0.6 0 0;
+    --chart-4: 0.12 0 0;
+    --chart-5: 0.35 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
